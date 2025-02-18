@@ -1,0 +1,191 @@
+2025-02-17 18:17:40,916 INFO  - Starting TaskApplication using Java 17.0.5 with PID 7004 (F:\projects\task\target\classes started by Ali in F:\projects\task)
+2025-02-17 18:17:40,929 DEBUG - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-17 18:17:40,932 INFO  - No active profile set, falling back to 1 default profile: "default"
+2025-02-17 18:17:55,808 DEBUG - Filter 'jwtAuthenticationFilter' configured for use
+2025-02-17 18:18:01,151 INFO  - Started TaskApplication in 21.324 seconds (process running for 23.084)
+2025-02-17 18:18:51,830 INFO  - Entering method: AuthenticationService.signUpService by user: 5
+2025-02-17 18:18:51,834 INFO  - Entering method: UserService.findByEmail by user: 5
+2025-02-17 18:18:52,253 INFO  - Exiting method: UserService.findByEmail by user: 5 with execution time: 419 ms
+2025-02-17 18:18:52,312 INFO  - Entering method: UserService.findRoleByName by user: 5
+2025-02-17 18:18:52,322 INFO  - Exiting method: UserService.findRoleByName by user: 5 with execution time: 10 ms
+2025-02-17 18:18:52,323 INFO  - Entering method: UserService.save by user: 5
+2025-02-17 18:18:52,614 INFO  - Exiting method: UserService.save by user: 5 with execution time: 291 ms
+2025-02-17 18:18:52,614 INFO  - Exiting method: AuthenticationService.signUpService by user: 5 with execution time: 786 ms
+2025-02-17 18:19:09,999 WARN  - Unable to retrieve user ID: Logging in attempt without token.
+2025-02-17 18:19:10,000 INFO  - Entering method: AuthenticationService.loginService by user: null
+2025-02-17 18:19:10,000 WARN  - Unable to retrieve user ID: Logging in attempt without token.
+2025-02-17 18:19:10,000 INFO  - Entering method: JwtService.createJwtToken by user: null
+2025-02-17 18:19:10,344 INFO  - Exiting method: JwtService.createJwtToken by user: null with execution time: 344 ms
+2025-02-17 18:19:10,345 INFO  - Exiting method: AuthenticationService.loginService by user: null with execution time: 346 ms
+2025-02-17 18:21:18,246 INFO  - Entering method: BookServiceImpl.getAllBooks by user: 15
+2025-02-17 18:21:18,288 INFO  - Exiting method: BookServiceImpl.getAllBooks by user: 15 with execution time: 42 ms
+2025-02-17 18:21:59,564 INFO  - Entering method: BookServiceImpl.getBookById by user: 15
+2025-02-17 18:21:59,568 ERROR - Exception in method: BookServiceImpl.getBookById by user: 15 with message: Book not found with id: 4
+2025-02-17 18:22:35,833 INFO  - Entering method: PatronServiceImpl.addPatron by user: 15
+2025-02-17 18:22:35,846 INFO  - Exiting method: PatronServiceImpl.addPatron by user: 15 with execution time: 13 ms
+2025-02-17 18:22:56,903 INFO  - Entering method: BorrowingServiceImpl.borrowBook by user: 15
+2025-02-17 18:22:56,952 INFO  - Exiting method: BorrowingServiceImpl.borrowBook by user: 15 with execution time: 49 ms
+2025-02-17 19:14:40,577 INFO  - Starting BookRepositoryIntegrationTest using Java 17.0.5 with PID 9692 (started by Ali in F:\projects\task)
+2025-02-17 19:14:40,589 DEBUG - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-17 19:14:40,591 INFO  - No active profile set, falling back to 1 default profile: "default"
+2025-02-17 19:14:50,889 INFO  - Started BookRepositoryIntegrationTest in 11.31 seconds (process running for 14.747)
+2025-02-17 19:18:24,960 INFO  - Starting BookRepositoryIntegrationTest using Java 17.0.5 with PID 14068 (started by Ali in F:\projects\task)
+2025-02-17 19:18:24,968 DEBUG - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-17 19:18:24,971 INFO  - No active profile set, falling back to 1 default profile: "default"
+2025-02-17 19:18:35,636 INFO  - Started BookRepositoryIntegrationTest in 11.833 seconds (process running for 15.512)
+2025-02-17 19:48:02,973 INFO  - Starting PatronRepositoryIntegrationTest using Java 17.0.5 with PID 728 (started by Ali in F:\projects\task)
+2025-02-17 19:48:02,985 DEBUG - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-17 19:48:02,988 INFO  - No active profile set, falling back to 1 default profile: "default"
+2025-02-17 19:48:13,098 INFO  - Started PatronRepositoryIntegrationTest in 11.409 seconds (process running for 14.687)
+2025-02-17 19:48:44,984 INFO  - Starting PatronRepositoryIntegrationTest using Java 17.0.5 with PID 17460 (started by Ali in F:\projects\task)
+2025-02-17 19:48:44,995 DEBUG - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-17 19:48:44,997 INFO  - No active profile set, falling back to 1 default profile: "default"
+2025-02-17 19:48:55,488 INFO  - Started PatronRepositoryIntegrationTest in 11.473 seconds (process running for 14.97)
+2025-02-17 20:11:16,760 INFO  - Starting BorrowingRecordRepositoryIntegrationTest using Java 17.0.5 with PID 9672 (started by Ali in F:\projects\task)
+2025-02-17 20:11:16,768 DEBUG - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-17 20:11:16,770 INFO  - No active profile set, falling back to 1 default profile: "default"
+2025-02-17 20:11:27,119 INFO  - Started BorrowingRecordRepositoryIntegrationTest in 11.348 seconds (process running for 14.852)
+2025-02-17 20:11:28,989 ERROR - Referential integrity constraint violation: "FK79D6BB8PTX41ACT3QBT5PXUWM: PUBLIC.BORROWING_RECORD FOREIGN KEY(BOOK_ID) REFERENCES PUBLIC.BOOK(ID) (CAST(1 AS BIGINT))"; SQL statement:
+insert into borrowing_record (book_id,borrowing_date,patron_id,return_date,id) values (?,?,?,?,default) [23506-232]
+2025-02-17 20:11:29,120 ERROR - Referential integrity constraint violation: "FK79D6BB8PTX41ACT3QBT5PXUWM: PUBLIC.BORROWING_RECORD FOREIGN KEY(BOOK_ID) REFERENCES PUBLIC.BOOK(ID) (CAST(1 AS BIGINT))"; SQL statement:
+insert into borrowing_record (book_id,borrowing_date,patron_id,return_date,id) values (?,?,?,?,default) [23506-232]
+2025-02-17 20:15:01,535 INFO  - Starting BorrowingRecordRepositoryIntegrationTest using Java 17.0.5 with PID 6028 (started by Ali in F:\projects\task)
+2025-02-17 20:15:01,547 DEBUG - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-17 20:15:01,549 INFO  - No active profile set, falling back to 1 default profile: "default"
+2025-02-17 20:15:11,125 INFO  - Started BorrowingRecordRepositoryIntegrationTest in 10.626 seconds (process running for 14.001)
+2025-02-17 22:42:03,896 INFO  - Starting BorrowingRecordRepositoryIntegrationTest using Java 17.0.5 with PID 8532 (started by Ali in F:\projects\task)
+2025-02-17 22:42:03,907 DEBUG - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-17 22:42:03,910 INFO  - No active profile set, falling back to 1 default profile: "default"
+2025-02-17 22:42:13,457 INFO  - Started BorrowingRecordRepositoryIntegrationTest in 10.527 seconds (process running for 13.775)
+2025-02-17 22:43:32,677 INFO  - Starting TaskApplication using Java 17.0.5 with PID 7520 (F:\projects\task\target\classes started by Ali in F:\projects\task)
+2025-02-17 22:43:32,689 DEBUG - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-17 22:43:32,695 INFO  - No active profile set, falling back to 1 default profile: "default"
+2025-02-17 22:43:52,727 DEBUG - Filter 'jwtAuthenticationFilter' configured for use
+2025-02-17 22:43:59,453 INFO  - Started TaskApplication in 27.895 seconds (process running for 29.873)
+2025-02-17 22:45:53,506 WARN  - Unable to retrieve user ID: Logging in attempt without token.
+2025-02-17 22:45:53,506 INFO  - Entering method: AuthenticationService.loginService by user: null
+2025-02-17 22:45:53,511 WARN  - Unable to retrieve user ID: Logging in attempt without token.
+2025-02-17 22:45:53,512 INFO  - Entering method: JwtService.createJwtToken by user: null
+2025-02-17 22:45:54,840 INFO  - Exiting method: JwtService.createJwtToken by user: null with execution time: 1329 ms
+2025-02-17 22:45:54,841 INFO  - Exiting method: AuthenticationService.loginService by user: null with execution time: 1352 ms
+2025-02-17 22:47:05,733 INFO  - Entering method: BookServiceImpl.getBooksByPage by user: 15
+2025-02-17 22:47:05,833 INFO  - Exiting method: BookServiceImpl.getBooksByPage by user: 15 with execution time: 100 ms
+2025-02-17 22:47:17,959 INFO  - Entering method: BookServiceImpl.getBooksByPage by user: 15
+2025-02-17 22:47:18,006 INFO  - Exiting method: BookServiceImpl.getBooksByPage by user: 15 with execution time: 48 ms
+2025-02-17 22:47:25,076 INFO  - Entering method: BookServiceImpl.getBooksByPage by user: 15
+2025-02-17 22:47:25,091 INFO  - Exiting method: BookServiceImpl.getBooksByPage by user: 15 with execution time: 15 ms
+2025-02-17 22:47:32,352 INFO  - Entering method: BookServiceImpl.getBooksByPage by user: 15
+2025-02-17 22:47:32,358 INFO  - Exiting method: BookServiceImpl.getBooksByPage by user: 15 with execution time: 6 ms
+2025-02-17 22:57:00,523 INFO  - Starting TaskApplication using Java 17.0.5 with PID 15488 (F:\projects\task\target\classes started by Ali in F:\projects\task)
+2025-02-17 22:57:00,538 DEBUG - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-17 22:57:00,540 INFO  - No active profile set, falling back to 1 default profile: "default"
+2025-02-17 22:57:17,212 DEBUG - Filter 'jwtAuthenticationFilter' configured for use
+2025-02-17 22:57:23,623 INFO  - Started TaskApplication in 24.141 seconds (process running for 25.926)
+2025-02-17 22:59:14,727 INFO  - Entering method: PatronServiceImpl.getPatronsByPage by user: 15
+2025-02-17 22:59:15,024 INFO  - Exiting method: PatronServiceImpl.getPatronsByPage by user: 15 with execution time: 300 ms
+2025-02-17 22:59:35,331 INFO  - Entering method: PatronServiceImpl.getPatronsByPage by user: 15
+2025-02-17 22:59:35,347 INFO  - Exiting method: PatronServiceImpl.getPatronsByPage by user: 15 with execution time: 17 ms
+2025-02-17 23:00:00,740 INFO  - Entering method: PatronServiceImpl.getPatronsByPage by user: 15
+2025-02-17 23:00:00,756 INFO  - Exiting method: PatronServiceImpl.getPatronsByPage by user: 15 with execution time: 16 ms
+2025-02-17 23:00:10,638 INFO  - Entering method: PatronServiceImpl.getPatronsByPage by user: 15
+2025-02-17 23:00:10,662 INFO  - Exiting method: PatronServiceImpl.getPatronsByPage by user: 15 with execution time: 24 ms
+2025-02-18 00:06:29,170 INFO  - Starting TaskApplication using Java 17.0.5 with PID 17212 (F:\projects\task\target\classes started by Ali in F:\projects\task)
+2025-02-18 00:06:29,209 DEBUG - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-18 00:06:29,214 INFO  - No active profile set, falling back to 1 default profile: "default"
+2025-02-18 00:06:43,789 DEBUG - Filter 'jwtAuthenticationFilter' configured for use
+2025-02-18 00:06:48,790 INFO  - Started TaskApplication in 20.66 seconds (process running for 22.459)
+2025-02-18 00:06:56,468 INFO  - Entering method: AuthenticationService.signUpService by user: 15
+2025-02-18 00:06:56,471 INFO  - Entering method: UserService.findByEmail by user: 15
+2025-02-18 00:06:56,810 INFO  - Exiting method: UserService.findByEmail by user: 15 with execution time: 339 ms
+2025-02-18 00:06:56,819 INFO  - Entering method: UserService.findRoleByName by user: 15
+2025-02-18 00:06:56,847 INFO  - Exiting method: UserService.findRoleByName by user: 15 with execution time: 28 ms
+2025-02-18 00:06:56,849 INFO  - Entering method: UserService.save by user: 15
+2025-02-18 00:06:57,332 INFO  - Exiting method: UserService.save by user: 15 with execution time: 484 ms
+2025-02-18 00:06:57,334 INFO  - Exiting method: AuthenticationService.signUpService by user: 15 with execution time: 867 ms
+2025-02-18 00:15:54,627 INFO  - Entering method: BookServiceImpl.getAllBooks by user: 15
+2025-02-18 00:15:54,687 INFO  - Exiting method: BookServiceImpl.getAllBooks by user: 15 with execution time: 60 ms
+2025-02-18 01:31:19,835 INFO  - Starting TaskApplication using Java 17.0.5 with PID 17212 (F:\projects\task\target\classes started by Ali in F:\projects\task)
+2025-02-18 01:31:19,835 DEBUG - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-18 01:31:19,835 INFO  - No active profile set, falling back to 1 default profile: "default"
+2025-02-18 01:31:23,805 DEBUG - Filter 'jwtAuthenticationFilter' configured for use
+2025-02-18 01:31:27,604 INFO  - Started TaskApplication in 7.908 seconds (process running for 5101.273)
+2025-02-18 01:31:34,247 INFO  - Starting TaskApplication using Java 17.0.5 with PID 17212 (F:\projects\task\target\classes started by Ali in F:\projects\task)
+2025-02-18 01:31:34,247 DEBUG - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-18 01:31:34,248 INFO  - No active profile set, falling back to 1 default profile: "default"
+2025-02-18 01:31:37,589 DEBUG - Filter 'jwtAuthenticationFilter' configured for use
+2025-02-18 01:31:38,162 ERROR - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.library.task.controllers.BookController required a bean of type 'com.library.task.services.IBookService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.library.task.services.IBookService' in your configuration.
+
+2025-02-18 01:31:39,723 INFO  - Starting TaskApplication using Java 17.0.5 with PID 17212 (F:\projects\task\target\classes started by Ali in F:\projects\task)
+2025-02-18 01:31:39,724 DEBUG - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-18 01:31:39,724 INFO  - No active profile set, falling back to 1 default profile: "default"
+2025-02-18 01:31:42,925 DEBUG - Filter 'jwtAuthenticationFilter' configured for use
+2025-02-18 02:23:44,873 INFO  - Starting TaskApplication using Java 17.0.5 with PID 8316 (F:\projects\task\target\classes started by Ali in F:\projects\task)
+2025-02-18 02:23:44,888 DEBUG - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-18 02:23:44,890 INFO  - No active profile set, falling back to 1 default profile: "default"
+2025-02-18 02:24:00,123 DEBUG - Filter 'jwtAuthenticationFilter' configured for use
+2025-02-18 02:24:07,096 INFO  - Started TaskApplication in 23.193 seconds (process running for 24.837)
+2025-02-18 02:27:30,505 INFO  - Starting TaskApplication using Java 17.0.5 with PID 10232 (F:\projects\task\target\classes started by Ali in F:\projects\task)
+2025-02-18 02:27:30,518 DEBUG - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-18 02:27:30,520 INFO  - No active profile set, falling back to 1 default profile: "default"
+2025-02-18 02:27:45,944 DEBUG - Filter 'jwtAuthenticationFilter' configured for use
+2025-02-18 02:27:53,245 INFO  - Starting TaskApplication using Java 17.0.5 with PID 8060 (F:\projects\task\target\classes started by Ali in F:\projects\task)
+2025-02-18 02:27:53,255 DEBUG - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-18 02:27:53,259 INFO  - No active profile set, falling back to 1 default profile: "default"
+2025-02-18 02:28:09,670 DEBUG - Filter 'jwtAuthenticationFilter' configured for use
+2025-02-18 02:28:18,185 INFO  - Started TaskApplication in 25.924 seconds (process running for 27.58)
+2025-02-18 02:34:59,547 INFO  - Starting TaskApplication using Java 17.0.5 with PID 6620 (F:\projects\task\target\classes started by Ali in F:\projects\task)
+2025-02-18 02:34:59,560 DEBUG - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-18 02:34:59,562 INFO  - No active profile set, falling back to 1 default profile: "default"
+2025-02-18 02:35:13,973 DEBUG - Filter 'jwtAuthenticationFilter' configured for use
+2025-02-18 02:35:20,841 INFO  - Started TaskApplication in 22.37 seconds (process running for 24.177)
+2025-02-18 02:35:34,447 INFO  - Entering method: BookServiceImpl.getBookById by user: 15
+2025-02-18 02:35:34,455 ERROR - Exception in method: BookServiceImpl.getBookById by user: 15 with message: Book not found with id: 4
+2025-02-18 02:35:40,715 INFO  - Entering method: BookServiceImpl.getBookById by user: 15
+2025-02-18 02:35:40,752 INFO  - Exiting method: BookServiceImpl.getBookById by user: 15 with execution time: 38 ms
+2025-02-18 02:38:06,841 INFO  - Entering method: BookServiceImpl.addBook by user: 15
+2025-02-18 02:38:06,955 INFO  - Exiting method: BookServiceImpl.addBook by user: 15 with execution time: 114 ms
+2025-02-18 02:39:42,085 INFO  - Entering method: BookServiceImpl.updateBook by user: 15
+2025-02-18 02:39:42,098 INFO  - Exiting method: BookServiceImpl.updateBook by user: 15 with execution time: 13 ms
+2025-02-18 02:41:22,104 INFO  - Entering method: BookServiceImpl.deleteBook by user: 15
+2025-02-18 02:41:22,494 INFO  - Exiting method: BookServiceImpl.deleteBook by user: 15 with execution time: 390 ms
+2025-02-18 02:53:34,246 INFO  - Entering method: BorrowingServiceImpl.getAllBorrowingRecords by user: 15
+2025-02-18 02:53:34,283 INFO  - Exiting method: BorrowingServiceImpl.getAllBorrowingRecords by user: 15 with execution time: 37 ms
+2025-02-18 02:57:22,546 INFO  - Entering method: BorrowingServiceImpl.getBorrowingRecordById by user: 15
+2025-02-18 02:57:22,552 ERROR - Exception in method: BorrowingServiceImpl.getBorrowingRecordById by user: 15 with message: Borrowing record not found with id: 2
+2025-02-18 02:57:50,027 INFO  - Entering method: BorrowingServiceImpl.borrowBook by user: 15
+2025-02-18 02:57:50,062 ERROR - Exception in method: BorrowingServiceImpl.borrowBook by user: 15 with message: Book not found with id: 2
+2025-02-18 02:57:55,144 INFO  - Entering method: BorrowingServiceImpl.borrowBook by user: 15
+2025-02-18 02:57:55,152 ERROR - Exception in method: BorrowingServiceImpl.borrowBook by user: 15 with message: Book not found with id: 2
+2025-02-18 02:58:05,664 INFO  - Entering method: BorrowingServiceImpl.borrowBook by user: 15
+2025-02-18 02:58:05,719 INFO  - Exiting method: BorrowingServiceImpl.borrowBook by user: 15 with execution time: 55 ms
+2025-02-18 02:58:33,666 INFO  - Entering method: BorrowingServiceImpl.getBorrowingRecordById by user: 15
+2025-02-18 02:58:33,672 INFO  - Exiting method: BorrowingServiceImpl.getBorrowingRecordById by user: 15 with execution time: 6 ms
+2025-02-18 02:59:45,803 INFO  - Entering method: BorrowingServiceImpl.returnBook by user: 15
+2025-02-18 02:59:45,810 INFO  - Exiting method: BorrowingServiceImpl.returnBook by user: 15 with execution time: 7 ms
+2025-02-18 03:00:18,478 INFO  - Entering method: BorrowingServiceImpl.getAllBorrowingRecords by user: 15
+2025-02-18 03:00:18,484 INFO  - Exiting method: BorrowingServiceImpl.getAllBorrowingRecords by user: 15 with execution time: 6 ms
+2025-02-18 03:04:51,223 INFO  - Entering method: PatronServiceImpl.getAllPatrons by user: 15
+2025-02-18 03:04:51,243 INFO  - Exiting method: PatronServiceImpl.getAllPatrons by user: 15 with execution time: 20 ms
+2025-02-18 03:05:43,563 INFO  - Entering method: PatronServiceImpl.getPatronsByPage by user: 15
+2025-02-18 03:05:43,593 INFO  - Exiting method: PatronServiceImpl.getPatronsByPage by user: 15 with execution time: 30 ms
+2025-02-18 03:07:19,595 INFO  - Entering method: PatronServiceImpl.getPatronById by user: 15
+2025-02-18 03:07:19,598 INFO  - Exiting method: PatronServiceImpl.getPatronById by user: 15 with execution time: 3 ms
+2025-02-18 03:08:58,111 INFO  - Entering method: PatronServiceImpl.addPatron by user: 15
+2025-02-18 03:08:58,117 INFO  - Exiting method: PatronServiceImpl.addPatron by user: 15 with execution time: 6 ms
+2025-02-18 03:09:59,511 INFO  - Entering method: PatronServiceImpl.updatePatron by user: 15
+2025-02-18 03:09:59,517 INFO  - Exiting method: PatronServiceImpl.updatePatron by user: 15 with execution time: 6 ms
+2025-02-18 03:10:41,978 INFO  - Entering method: PatronServiceImpl.deletePatron by user: 15
+2025-02-18 03:10:41,995 INFO  - Exiting method: PatronServiceImpl.deletePatron by user: 15 with execution time: 17 ms
